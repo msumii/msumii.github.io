@@ -27,7 +27,7 @@
 
 .header-menu a:hover,
 .header-menu a.ativo {
-  background: linear-gradient(#5B23E0 0%, #9560FF 100%);
+  background: linear-gradient(90deg,#5B23E0 0%, #9560FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -72,8 +72,7 @@
   }
 }
 
-@media (max-width: 650px) {
-  /* .header-menu { */
+@media (max-width: 600px) {
   .header{
     flex-direction: column;
     align-items: center;
