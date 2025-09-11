@@ -7,5 +7,6 @@
 /* Utilidades */
 @import './utilidades/componentes.css';
 
-/* Home */
-@import './portfolio/home.css'
+/* Portfolio */
+@import './portfolio/home.css';
+@import './portfolio/section.css'
