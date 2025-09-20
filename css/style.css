@@ -9,4 +9,6 @@
 
 /* Portfolio */
 @import './portfolio/home.css';
-@import './portfolio/section.css'
+@import './portfolio/sobre.css';
+@import './portfolio/formacao.css';
+@import './portfolio/experiencia.css';

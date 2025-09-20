@@ -3,6 +3,7 @@
   position: fixed;
   background-color: var(--cor-c12);
   border-bottom: 1px solid var(--cor-p1);
+  z-index: 1;
 }
 
 .header {
