@@ -10,6 +10,7 @@
   word-wrap: break-word;
   text-align: right;
   align-self: center;
+  cursor: default;
 }
 
 .formacoes-container {
@@ -39,10 +40,15 @@
   position: absolute;
   top: -4px;
   left: 16px;
+  transition: .3s;
 }
 
 .formacao-conteudo:hover {
   transform: scale(1.08);
+}
+
+.formacao-conteudo:hover:before {
+  width: 24px;
 }
 
 .formacao-conteudo h3 {

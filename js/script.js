@@ -1,36 +1,39 @@
 const projetos = [
   {
     id: 1,
-    imgSrc:
-      "https://github.com/msumii/desafio-product-preview-card/raw/main/public/design/desktop-preview.jpg",
-    altText: "Preview do projeto Product Preview Card",
-    titulo: "Product Preview Card",
+    imgSrc: "./img/projetos/studio-ghibli-desktop-preview.png",
+    altText: "Página Studio Ghibli",
+    titulo: "Studio Ghibli",
     descricao:
-      "Um card de visualização de produto responsivo feito com HTML e CSS.",
+      'Uma landing page temática sobre o filme "A Viagem de Chihiro" do Studio Ghibli.',
     tecnologias: ["HTML", "CSS"],
     projetoLink: "https://desafio-studio-ghibli.vercel.app/",
     repositorioLink: "https://github.com/msumii/desafio-studio-ghibli"
   },
   {
     id: 2,
-    imgSrc: 
-      "https://github.com/msumii/desafio-studio-ghibli/raw/main/src/screenshots/desktop-preview.png",
-    altText: "Página Studio Ghibli",
-    titulo: "Studio Ghibli",
-    descricao: 'Uma landing page temática sobre o filme "A Viagem de Chihiro" do Studio Ghibli.',
-    tecnologias: ["HTML", "CSS"],
-    projetoLink: "https://desafio-studio-ghibli.vercel.app/",
-    repositorioLink: "https://github.com/msumii/desafio-studio-ghibli"
+    imgSrc:
+      "./img/projetos/bikcraft-desktop-preview.png",
+    altText: "Preview do projeto Bikcraft",
+    titulo: "Bikcraft",
+    descricao:
+      "Um site de vendas focado em bicicletas elétricas sob medida.",
+    tecnologias: ["HTML", "CSS", "JavaScript"],
+    projetoLink: "https://bikcraft-eight-eta.vercel.app/",
+    repositorioLink: "https://github.com/msumii/bikcraft"
   },
   {
     id: 3,
     imgSrc:
-      "https://github.com/msumii/desafio-faq-accordion/raw/main/src/design/desktop-preview.jpg",
+      "./img/projetos/faq-accordion-desktop-preview.png",
     altText: "Preview do Projeto FAQs",
     titulo: "FAQs Accordion",
-    descricao: "Um card interativo de perguntas frequentes que facilita o acesso às principais dúvidas.",
-    tecnologias: ["HTML", "CSS", "JavaScript"]
-  },
+    descricao:
+      "Um card interativo de perguntas frequentes que facilita o acesso às principais dúvidas.",
+    tecnologias: ["HTML", "CSS", "JavaScript"],
+    projetoLink: "https://desafio-faq-accordion.vercel.app/",
+    repositorioLink: "https://github.com/msumii/desafio-faq-accordion"
+  }
 ];
 
 const slots = document.querySelectorAll(".projeto-slot");
@@ -64,7 +67,7 @@ function atualizarCarrossel() {
 
   projetoTecnologias.innerHTML = "";
   if (projetoAtual.tecnologias) {
-    projetoAtual.tecnologias.forEach(tec => {
+    projetoAtual.tecnologias.forEach((tec) => {
       const span = document.createElement("span");
       span.textContent = tec;
       projetoTecnologias.appendChild(span);
@@ -118,17 +121,16 @@ let mostrandoProjetos = true;
 function atualizarDisplay() {
   if (mostrandoProjetos) {
     portfolioHabilidades.style.display = "none";
-    
+
     // portfolioProjetos aparece sempre
     portfolioProjeto.style.display = "grid";
-    
+
     // portfolioProjeto aparece apenas se a tela for >= 1200px
     if (window.innerWidth >= 1200) {
       portfolioProjetos.style.display = "grid";
     } else {
       portfolioProjetos.style.display = "none";
     }
-    
   } else {
     // Se mostrando habilidades
     portfolioHabilidades.style.display = "grid";
@@ -160,46 +162,59 @@ const habilidades = [
   {
     id: 1,
     nome: "HTML5",
-    sobre: "O HTML5 é a versão mais recente do HTML, usada para estruturar e exibir conteúdo na web, com novos recursos para áudio, vídeo e interatividade."
+    sobre:
+      "O HTML5 é a versão mais recente do HTML, usada para estruturar e exibir conteúdo na web, com novos recursos para áudio, vídeo e interatividade."
   },
   {
     id: 2,
     nome: "CSS3",
-    sobre: "O CSS3 é a evolução do CSS, responsável por definir o visual das páginas web, permitindo criar designs modernos com cores, fontes, transições e efeitos visuais."
+    sobre:
+      "O CSS3 é a evolução do CSS, responsável por definir o visual das páginas web, permitindo criar designs modernos com cores, fontes, transições e efeitos visuais."
   },
   {
     id: 3,
     nome: "JavaScript",
-    sobre: "O JavaScript é uma linguagem de programação que adiciona interatividade às páginas web, permitindo criar animações, validar formulários e tornar o site dinâmico."
+    sobre:
+      "O JavaScript é uma linguagem de programação que adiciona interatividade às páginas web, permitindo criar animações, validar formulários e tornar o site dinâmico."
   },
   {
     id: 4,
     nome: "Carregando",
-    sobre: "Habilidade atualmente em desenvolvimento, retorne em breve para conferir as atualizações e acompanhar o progresso dessa área em constante aprimoramento."
+    sobre:
+      "Habilidade atualmente em desenvolvimento, retorne em breve para conferir as atualizações e acompanhar o progresso dessa área em constante aprimoramento."
   },
   {
     id: 5,
     nome: "Carregando",
-    sobre: "Habilidade atualmente em desenvolvimento, retorne em breve para conferir as atualizações e acompanhar o progresso dessa área em constante aprimoramento."
+    sobre:
+      "Habilidade atualmente em desenvolvimento, retorne em breve para conferir as atualizações e acompanhar o progresso dessa área em constante aprimoramento."
   },
   {
     id: 6,
     nome: "Carregando",
-    sobre: "Habilidade atualmente em desenvolvimento, retorne em breve para conferir as atualizações e acompanhar o progresso dessa área em constante aprimoramento."
+    sobre:
+      "Habilidade atualmente em desenvolvimento, retorne em breve para conferir as atualizações e acompanhar o progresso dessa área em constante aprimoramento."
   }
-]
+];
 
-const habilidade = document.querySelectorAll(".habilidade")
-const nomeHabilidade = document.querySelector(".nome-habilidade")
-const sobreHabilidade = document.querySelector(".sobre-habilidade")
+const habilidade = document.querySelectorAll(".habilidade");
+const nomeHabilidade = document.querySelector(".nome-habilidade");
+const sobreHabilidade = document.querySelector(".sobre-habilidade");
 
 habilidade.forEach((habilidade, i) => {
   habilidade.addEventListener("mouseenter", () => {
     nomeHabilidade.textContent = habilidades[i].nome;
-    sobreHabilidade.textContent = habilidades[i].sobre
-  })
+    sobreHabilidade.textContent = habilidades[i].sobre;
+  });
   habilidade.addEventListener("mouseleave", () => {
     nomeHabilidade.textContent = "Conheça sobre";
-    sobreHabilidade.textContent = "Passe o mouse por cima para ler suas informações.";
-  })  
-})
+    sobreHabilidade.textContent =
+      "Passe o mouse por cima para ler suas informações.";
+  });
+});
+
+//Animação
+
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}

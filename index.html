@@ -6,6 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Msumi - Portfolio</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script>
+    document.documentElement.classList.add('js')
+  </script>
 </head>
 
 <body id="home">
@@ -26,7 +35,7 @@
   <main class="container">
     <section id="home" class="home" aria-label="Home">
       <div class="home-conteudo">
-        <div class="home-links">
+        <div class="home-links fadeInLeft" data-anime="0">
           <a href="https://github.com/msumii" target="_blank">
             <img src="./img/github-p.svg" alt="Github">
           </a>
@@ -37,14 +46,14 @@
             <img src="./img/curriculo-p.svg" alt="Curriculo">
           </a>
         </div>
-        <h2 class="font-1-l cor-0">Desenvolvedor <span>Front End</span> & <span>UI Designer</span></h2>
-        <p class="font-2-m cor-6">Desenvolvo front-end moderno e UI intuitiva para criar experiências digitais ágeis e memoráveis.</p>
-        <div class="home-tecnologias font-1-s cor-6">
+        <h2 class="font-1-l cor-0 fadeInLeft" data-anime="500">Desenvolvedor <span>Front End</span> & <span>UI Designer</span></h2>
+        <p class="font-2-m cor-6 fadeInLeft" data-anime="800">Desenvolvo front-end moderno e UI intuitiva para criar experiências digitais ágeis e memoráveis.</p>
+        <div class="home-tecnologias font-1-s cor-6 fadeInLeft" data-anime="1000">
           <span class="home-tecnologia">HTML</span>
           <span class="home-tecnologia">CSS</span>
           <span class="home-tecnologia">JavaScript</span>
         </div>
-        <div class="home-nav font-1-s cor-0">
+        <div class="home-nav font-1-s cor-0 fadeInLeft" data-anime="1200">
           <a href="#portfolio">
             Projetos <img src="img/projetos-icon.svg" alt="Projetos">
           </a>
@@ -54,17 +63,17 @@
         </div>
       </div>
       <picture>
-        <img src="./img/ilustração_home.png" width="480" height="465" alt="Ilustração Home">
+        <img class="fadeInLeft" data-anime="1400" src="./img/ilustração_home.png" width="480" height="465" alt="Ilustração Home">
       </picture>
     </section>
     <section id="sobre" class="sobre" aria-label="Sobre">
-      <h1 class="font-1-xl">Sobre Mim</h1>
+      <h1 class="font-1-xl fadeInDown" data-anime="0">Sobre Mim</h1>
       <section class="sobre-informacoes" aria-label="Sobre Informações">
         <picture>
-          <img src="./img/foto_sobre.jpg" width="428" height="428" alt="Ilustração Home">
+          <img class="fadeInLeft" data-anime="1200" src="./img/foto_sobre.jpg" width="428" height="428" alt="Ilustração Home">
         </picture>
         <div class="informacoes-conteudo">
-          <div class="informacoes-links">
+          <div class="informacoes-links fadeInRight" data-anime="100">
             <a href="https://github.com/msumii" target="_blank">
               <img src="./img/github-p.svg" alt="Github">
             </a>
@@ -75,43 +84,43 @@
               <img src="./img/curriculo-p.svg" alt="Curriculo">
             </a>
           </div>
-          <h2 class="font-1-l cor-0"> <span>Olá Mundo, eu sou</span><br> Vithor Rocha</h2>
-          <p class="font-2-m cor-6">Entusiasta do desenvolvimento web com conhecimentos em <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. Foco em <span>UI Design</span> e no aprendizado contínuo de novas tecnologias para criar experiências digitais modernas e acessíveis.</p>
-          <a class="informacao-nav font-1-s cor0" href="#portfolio"><img src="img/projeto-icon-2.svg" alt="">Ver Projetos</a>
+          <h2 class="font-1-l cor-0 fadeInRight" data-anime="500"> <span>Olá Mundo, eu sou</span><br> Vithor Rocha</h2>
+          <p class="font-2-m cor-6 fadeInRight" data-anime="800">Entusiasta do desenvolvimento web com conhecimentos em <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. Foco em <span>UI Design</span> e no aprendizado contínuo de novas tecnologias para criar experiências digitais modernas e acessíveis.</p>
+          <a class="informacao-nav font-1-s cor0 fadeInRight" data-anime="1000" href="#portfolio"><img src="img/projeto-icon-2.svg" alt="">Ver Projetos</a>
         </div>
       </section>
       <section class="sobre-formacao" aria-label="Sobre Formação">
         <div class="formacoes-container">
-          <div class="formacao-conteudo">
+          <div class="formacao-conteudo fadeInLeft" data-anime="50">
             <span class="formacao-tipo font-1-ss cor-8">Tecnologo</span>
             <span class="formacao-data font-1-ss cor-8">Jul 2023 - Dez 2025</span>
             <h3 class="formacao-curso font-1-m cor-0">Desenvolvimento em Jogos Digitais</h3>
             <span class="formacao-instituicao font-1-xxs cor-8">Anhanguera</span>
           </div>
-          <div class="formacao-conteudo">
+          <div class="formacao-conteudo fadeInLeft" data-anime="400">
             <span class="formacao-tipo font-1-ss cor-8">Tipo</span>
             <span class="formacao-data font-1-ss cor-8">Mês 20xx - Mês 20xx</span>
             <h3 class="formacao-curso font-1-m cor-0">Curso Realizado / Andamento</h3>
             <span class="formacao-instituicao font-1-xxs cor-8">Instituição</span>
           </div>
-          <div class="formacao-conteudo">
+          <div class="formacao-conteudo fadeInLeft" data-anime="800">
             <span class="formacao-tipo font-1-ss cor-8">Tipo</span>
             <span class="formacao-data font-1-ss cor-8">Mês 20xx - Mês 20xx</span>
             <h3 class="formacao-curso font-1-m cor-0">Curso Realizado / Andamento</h3>
             <span class="formacao-instituicao font-1-xxs cor-8">Instituição</span>
           </div>
-          <div class="formacao-conteudo">
+          <div class="formacao-conteudo fadeInLeft" data-anime="1200">
             <span class="formacao-tipo font-1-ss cor-8">Tipo</span>
             <span class="formacao-data font-1-ss cor-8">Mês 20xx - Mês 20xx</span>
             <h3 class="formacao-curso font-1-m cor-0">Curso Realizado / Andamento</h3>
             <span class="formacao-instituicao font-1-xxs cor-8">Instituição</span>
           </div>
         </div>
-        <h2 class="font-1-xxl-u cor-p5">FORMAÇÃO</h2>
+        <h2 class="font-1-xxl-u cor-p5 fadeInRight" data-anime="200">FORMAÇÃO</h2>
       </section>
       <section class="sobre-experiencia" aria-label="Sobre Experiência">
         <div class="experiencias-container">
-          <div class="experiencia-conteudo">
+          <div class="experiencia-conteudo fadeInRight" data-anime="400">
             <div class="infomacao-empresa">
               <h3 class="font-1-m cor-0">Organon & Co.</h3>
               <p class="font-2-s cor-6">Auxilo em atividades externas em escritório, preenchimento de planilha, monitoramento de produtos e etc.</p>
@@ -125,7 +134,7 @@
               </div>
             </div>
           </div>
-          <div class="experiencia-conteudo">
+          <div class="experiencia-conteudo fadeInRight" data-anime="800">
             <div class="infomacao-empresa">
               <h3 class="font-1-m cor-0">Empresa</h3>
               <p class="font-2-s cor-6">Resumo das principais atividades desempenhadas, atribuições assumidas e responsabilidades do cargo.</p>
@@ -140,47 +149,47 @@
             </div>
           </div>
         </div>
-        <h2 class="font-1-xxl-u cor-p5">EXPERIÊNCIA</h2>
+        <h2 class="font-1-xxl-u cor-p5 fadeInLeft" data-anime="200">EXPERIÊNCIA</h2>
       </section>
     </section>
     <section id="portfolio" class="portfolio" aria-label="Portfólio">
-      <h1 class="font-1-xl">Meu Portfólio</h1>
+      <h1 class="font-1-xl fadeInDown" data-anime="0">Meu Portfólio</h1>
       <div class="portfolio-botoes">
-        <button id="projetos" class="font-1-s cor-0"><img src="img/projeto-icon-2.svg" alt="">Ver Projetos</button>
-        <button id="habilidades" class="font-1-s cor-0"><img src="img/habilidades-icon.svg" alt="">Ver Habilidades</button>
+        <button id="projetos" class="font-1-s cor-0 fadeInLeft" data-anime="200"><img src="img/projeto-icon-2.svg" alt="">Ver Projetos</button>
+        <button id="habilidades" class="font-1-s cor-0 fadeInRight" data-anime="200"><img src="img/habilidades-icon.svg" alt="">Ver Habilidades</button>
       </div>
       <section class="portfolio-projetos">
-        <div class="projeto-slot">
+        <div class="projeto-slot fadeInLeft" data-anime="400">
           <img src="" alt="">
         </div>
-        <div class="projeto-slot ativo">
+        <div class="projeto-slot ativo fadeInUp" data-anime="600">
           <img src="" alt="">
         </div>
-        <div class="projeto-slot">
+        <div class="projeto-slot fadeInRight" data-anime="400">
           <img src="" alt="">
         </div>
         <div class="projetos-nav">
-          <button class="anterior-carrossel"><img src="img/seta-e-icon-p.svg" alt=""></button>
-          <button class="proximo-carrossel"><img src="img/seta-d-icon-p.svg" alt=""></button>
+          <button class="anterior-carrossel fadeInLeft" data-anime="1000"><img src="img/seta-e-icon-p.svg" alt=""></button>
+          <button class="proximo-carrossel fadeInRight" data-anime="1000"><img src="img/seta-d-icon-p.svg" alt=""></button>
         </div>
       </section>
       <section class="portfolio-projeto">
-        <div class="projeto-imagem">
+        <div class="projeto-imagem fadeInLeft" data-anime="1200">
           <img class="imagem-projeto" src="https://github.com/msumii/desafio-product-preview-card/raw/main/public/design/desktop-preview.jpg" alt="">
         </div>
         <div class="projeto-informacoes">
-          <div class="projeto-tecnologias">
+          <div class="projeto-tecnologias fadeInRight" data-anime="50">
           </div>
-          <h3 class="font-1-l cor-0 projeto-titulo">Projeto</h3>
-          <p class="font-2-m cor-6 projeto-descricao">Descrição do projeto</p>
-          <div class="projeto-navegacao">
+          <h3 class="font-1-l cor-0 projeto-titulo fadeInRight" data-anime="400">Projeto</h3>
+          <p class="font-2-m cor-6 projeto-descricao fadeInRight" data-anime="800">Descrição do projeto</p>
+          <div class="projeto-navegacao fadeInRight" data-anime="1000">
             <a class="font-1-s cor-0 navegacao-projeto" href="" target="_blank">Projeto <img src="./img/projetos-icon.svg" alt=""></a>
             <a class="font-1-s cor-0 navegacao-repositorio" href="" target="_blank">Repositório <img src="img/github-repositorio.svg" alt=""></a>
           </div>
         </div>
         <div class="projetos-nav">
-          <button class="anterior-projeto"><img src="img/seta-e-icon-p.svg" alt=""></button>
-          <button class="proximo-projeto"><img src="img/seta-d-icon-p.svg" alt=""></button>
+          <button class="anterior-projeto fadeInLeft" data-anime="1200"><img src="img/seta-e-icon-p.svg" alt=""></button>
+          <button class="proximo-projeto fadeInRight" data-anime="1200"><img src="img/seta-d-icon-p.svg" alt=""></button>
         </div>
       </section>
       <section class="portfolio-habilidades">
@@ -211,14 +220,14 @@
       </section>
     </section>
     <section id="contato" class="contato" aria-label="Contato">
-      <h1 class="font-1-xl">Meu Contato</h1>
+      <h1 class="font-1-xl fadeInDown" data-anime="0">Meu Contato</h1>
       <div class="contato-conteudo">
-        <div class="conteudo-email">
+        <div class="conteudo-email fadeInLeft" data-anime="200">
           <h2 class="font-1-xxxm cor-0">Mande um Email</h2>
           <p class="font-2-m cor-6">Deseja entrar em contato comigo para trabalhos ou propostas? Me envie um email para conversarmos!</p>
           <a class="font-1-xm cor-0" href="mailto:vithorrocha066@gmail.com"><img src="./img/enviar-email.svg" alt="">Clique Aqui</a>
         </div>
-        <div class="contatos">
+        <div class="contatos fadeInRight" data-anime="600">
           <h2 class="font-1-xxxm cor-0">Outros Meios</h2>
           <div class="meio-contato">
             <img src="./img/linkedin-contato-p.svg" alt="">
@@ -253,6 +262,8 @@
       <span class="font-1-s cor-6">© 2025 All Rights Reserved</span>
     </div>
   </footer>
+
+  <script src="./js/plugins/simple-anime.js"></script>
   <script src="./js/script.js"></script>
 </body>
 

@@ -7,6 +7,7 @@
 
 /* Utilidades */
 @import './utilidades/componentes.css';
+@import './utilidades/animacao.css';
 
 /* Portfolio */
 @import './portfolio/home.css';

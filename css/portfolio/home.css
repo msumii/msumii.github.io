@@ -19,6 +19,7 @@
 
 .home-links a img:hover {
   opacity: 100%;
+  transform: scale(1.08);
 }
 
 .home-conteudo h2 {
@@ -56,6 +57,8 @@
   background: var(--cor-c10);
   border-color: var(--cor-c9);
   color: var(--cor-c5);
+  transform: scale(1.08);
+  cursor: default;
 }
 
 .home-nav,
@@ -81,6 +84,7 @@
 .home-nav a:hover {
   background: var(--cor-p5);
   border: 1px solid var(--cor-p4);
+  transform: scale(1.08);
 }
 
 .home img {

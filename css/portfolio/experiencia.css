@@ -9,6 +9,7 @@
   max-width: 6ch;
   word-break: break-all;
   align-self: center;
+  cursor: default;
 }
 
 .experiencias-container {
@@ -35,10 +36,15 @@
   position: absolute;
   top: -4px;
   left: 20px;
+  transition: .3s;
 }
 
 .experiencia-conteudo:hover {
   transform: scale(1.08);
+}
+
+.experiencia-conteudo:hover:before {
+  width: 24px;
 }
 
 .experiencia-conteudo h3 {
@@ -61,6 +67,7 @@
 .habilidades-cargo .habilidade-cargo:hover {
   background: var(--cor-c9);
   color: var(--cor-c5);
+  cursor: default;
 }
 
 @media (max-width: 1200px) {

@@ -26,6 +26,7 @@
 .portfolio-botoes button:hover {
   background: var(--cor-p5);
   border-color: var(--cor-p4);
+  transform: scale(1.08);
 }
 
 @media (max-width: 600px){
@@ -70,6 +71,7 @@
 
 .projeto-slot img:hover {
   opacity: 1;
+  transform: scale(1.08);
 }
 
 .projeto-slot.ativo img {
@@ -78,6 +80,10 @@
   object-fit: cover;
   border-radius: 4px;
   opacity: 1;
+}
+
+.projeto-slot.ativo img:hover {
+  transform: scale(1);
 }
 
 .projetos-nav {
@@ -150,6 +156,8 @@
   background: var(--cor-c10);
   border-color: var(--cor-c9);
   color: var(--cor-c5);
+  transform: scale(1.08);
+  cursor: default;
 }
 
 .projeto-informacoes p {
@@ -177,6 +185,7 @@
 .projeto-navegacao a:hover {
   background: var(--cor-p5);
   border-color: var(--cor-p4);
+  transform: scale(1.08);
 }
 
 @media (max-width: 1200px) {
@@ -254,7 +263,13 @@
   }
 
   .descricao-habilidade {
-    display: none;
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 2;
+  }
+
+  .descricao-habilidade p {
+    max-width: 566px;
   }
   
   .container-habilidades {
@@ -272,9 +287,14 @@
     height: 138px;
   }
 
+  
   .habilidade img {
     max-width: 66px;
-  } 
+  }
+
+  .descricao-habilidade p {
+    max-width: 460px;
+  }
 }
 
 
@@ -290,5 +310,16 @@
 
   .habilidade img {
     max-width: 44px;
-  } 
-}
+  }
+
+  .descricao-habilidade h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  
+  .descricao-habilidade p {
+    max-width: 298px;
+    font-size: 1.125rem;
+    line-height: 1.6rem;
+    }
+  }
