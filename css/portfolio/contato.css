@@ -1,0 +1,112 @@
+.contato {
+  padding-bottom: 60px;
+}
+
+.contato-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contato-conteudo h2 {
+  margin-bottom: 12px;
+}
+
+.conteudo-email {
+  background: var(--cor-c11);
+  padding: 40px;
+  border-radius: 4px 0 0 4px;
+}
+
+.conteudo-email p {
+  max-width: 32ch;
+  margin-bottom: 24px;
+}
+
+.conteudo-email a{
+  display: flex;
+  padding: 12px;
+  background: var(--g, linear-gradient(90deg, #5B23E0 0%, #9560FF 100%));
+  justify-content: center;
+  gap: 12px;
+  border-radius: 4px;
+  transition: .3s
+}
+
+.conteudo-email a:hover {
+  box-shadow: 0 0 20px 0 #9560FF;
+}
+
+.contatos {
+  padding: 40px;
+  background: var(--cor-c10);
+  border-radius: 0 4px 4px 0;
+}
+
+.meio-contato {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 16px;
+  margin-bottom: 24px;
+}
+
+.meio-contato:last-child {
+  margin-bottom: 0;
+} 
+
+.meio-contato img {
+  grid-row: 1/3;
+  align-self: center;
+}
+
+.meio-contato h3 {
+  align-self: end;
+  margin-bottom: 4px;
+}
+
+.meio-contato a {
+  align-self: start;
+  justify-self: start;
+  position: relative;
+}
+
+.meio-contato a:after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--cor-c5);
+  display: block;
+  margin-bottom: 4px;
+  position: absolute;
+  transition: .5s;
+}
+
+.meio-contato a:hover:after{
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .contato-conteudo {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .contato-conteudo h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  
+  .conteudo-email p {
+    font-size: 1.125rem;
+    line-height: 1.6rem;
+  }
+
+  .meio-contato {
+    grid-template-columns: 1fr;
+    margin-bottom: 12px;
+  }
+  .meio-contato img {
+    width: 48px;
+    margin-bottom: 8px;
+  }
+}

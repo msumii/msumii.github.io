@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 600px;
   gap: 120px;
-  margin-bottom: 120px;
 }
 
 .sobre-experiencia h2 {
@@ -25,6 +24,7 @@
   grid-template-columns: minmax(280px, 0) auto;
   gap: 20px;
   position: relative;
+  transition: .3s;
 }
 
 .experiencia-conteudo:before {
@@ -35,6 +35,10 @@
   position: absolute;
   top: -4px;
   left: 20px;
+}
+
+.experiencia-conteudo:hover {
+  transform: scale(1.08);
 }
 
 .experiencia-conteudo h3 {

@@ -27,13 +27,13 @@
     <section id="home" class="home" aria-label="Home">
       <div class="home-conteudo">
         <div class="home-links">
-          <a href="https://github.com/msumii">
+          <a href="https://github.com/msumii" target="_blank">
             <img src="./img/github-p.svg" alt="Github">
           </a>
-          <a href="https://www.linkedin.com/in/vithorrocha/">
+          <a href="https://www.linkedin.com/in/vithorrocha/" target="_blank">
             <img src="./img/linkedin-p.svg" alt="LinkedIn">
           </a>
-          <a href="./currículo.pdf">
+          <a href="./currículo.pdf" target="_blank">
             <img src="./img/curriculo-p.svg" alt="Curriculo">
           </a>
         </div>
@@ -59,28 +59,28 @@
     </section>
     <section id="sobre" class="sobre" aria-label="Sobre">
       <h1 class="font-1-xl">Sobre Mim</h1>
-      <div class="sobre-informacoes">
+      <section class="sobre-informacoes" aria-label="Sobre Informações">
         <picture>
           <img src="./img/foto_sobre.jpg" width="428" height="428" alt="Ilustração Home">
         </picture>
         <div class="informacoes-conteudo">
           <div class="informacoes-links">
-            <a href="https://github.com/msumii">
+            <a href="https://github.com/msumii" target="_blank">
               <img src="./img/github-p.svg" alt="Github">
             </a>
-            <a href="https://www.linkedin.com/in/vithorrocha/">
+            <a href="https://www.linkedin.com/in/vithorrocha/" target="_blank">
               <img src="./img/linkedin-p.svg" alt="LinkedIn">
             </a>
-            <a href="./currículo.pdf">
+            <a href="./currículo.pdf" target="_blank">
               <img src="./img/curriculo-p.svg" alt="Curriculo">
             </a>
           </div>
           <h2 class="font-1-l cor-0"> <span>Olá Mundo, eu sou</span><br> Vithor Rocha</h2>
           <p class="font-2-m cor-6">Entusiasta do desenvolvimento web com conhecimentos em <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. Foco em <span>UI Design</span> e no aprendizado contínuo de novas tecnologias para criar experiências digitais modernas e acessíveis.</p>
-          <a class="informacao-nav font-1-s cor0" href=""><img src="img/projeto-icon-2.svg" alt="">Ver Projetos</a>
+          <a class="informacao-nav font-1-s cor0" href="#portfolio"><img src="img/projeto-icon-2.svg" alt="">Ver Projetos</a>
         </div>
-      </div>
-      <div class="sobre-formacao">
+      </section>
+      <section class="sobre-formacao" aria-label="Sobre Formação">
         <div class="formacoes-container">
           <div class="formacao-conteudo">
             <span class="formacao-tipo font-1-ss cor-8">Tecnologo</span>
@@ -108,8 +108,8 @@
           </div>
         </div>
         <h2 class="font-1-xxl-u cor-p5">FORMAÇÃO</h2>
-      </div>
-      <div class="sobre-experiencia">
+      </section>
+      <section class="sobre-experiencia" aria-label="Sobre Experiência">
         <div class="experiencias-container">
           <div class="experiencia-conteudo">
             <div class="infomacao-empresa">
@@ -141,9 +141,119 @@
           </div>
         </div>
         <h2 class="font-1-xxl-u cor-p5">EXPERIÊNCIA</h2>
+      </section>
+    </section>
+    <section id="portfolio" class="portfolio" aria-label="Portfólio">
+      <h1 class="font-1-xl">Meu Portfólio</h1>
+      <div class="portfolio-botoes">
+        <button id="projetos" class="font-1-s cor-0"><img src="img/projeto-icon-2.svg" alt="">Ver Projetos</button>
+        <button id="habilidades" class="font-1-s cor-0"><img src="img/habilidades-icon.svg" alt="">Ver Habilidades</button>
+      </div>
+      <section class="portfolio-projetos">
+        <div class="projeto-slot">
+          <img src="" alt="">
+        </div>
+        <div class="projeto-slot ativo">
+          <img src="" alt="">
+        </div>
+        <div class="projeto-slot">
+          <img src="" alt="">
+        </div>
+        <div class="projetos-nav">
+          <button class="anterior-carrossel"><img src="img/seta-e-icon-p.svg" alt=""></button>
+          <button class="proximo-carrossel"><img src="img/seta-d-icon-p.svg" alt=""></button>
+        </div>
+      </section>
+      <section class="portfolio-projeto">
+        <div class="projeto-imagem">
+          <img class="imagem-projeto" src="https://github.com/msumii/desafio-product-preview-card/raw/main/public/design/desktop-preview.jpg" alt="">
+        </div>
+        <div class="projeto-informacoes">
+          <div class="projeto-tecnologias">
+          </div>
+          <h3 class="font-1-l cor-0 projeto-titulo">Projeto</h3>
+          <p class="font-2-m cor-6 projeto-descricao">Descrição do projeto</p>
+          <div class="projeto-navegacao">
+            <a class="font-1-s cor-0 navegacao-projeto" href="" target="_blank">Projeto <img src="./img/projetos-icon.svg" alt=""></a>
+            <a class="font-1-s cor-0 navegacao-repositorio" href="" target="_blank">Repositório <img src="img/github-repositorio.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="projetos-nav">
+          <button class="anterior-projeto"><img src="img/seta-e-icon-p.svg" alt=""></button>
+          <button class="proximo-projeto"><img src="img/seta-d-icon-p.svg" alt=""></button>
+        </div>
+      </section>
+      <section class="portfolio-habilidades">
+        <div class="descricao-habilidade">
+          <h3 class="nome-habilidade font-1-l cor-0">Conheça Sobre</h3>
+          <p class="sobre-habilidade font-2-m cor-6">Passe o mouse por cima para ler suas informações.</p>
+        </div>
+        <div class="container-habilidades">
+          <div class="habilidade">
+            <img src="./img/html-habilidade.svg" alt="">
+          </div>
+          <div class="habilidade">
+            <img src="./img/css-habilidade.svg" alt="">
+          </div>
+          <div class="habilidade">
+            <img src="./img/javascript-habilidade.svg" alt="">
+          </div>
+          <div class="habilidade">
+            <img src="./img/desenvolvendo-habilidade.svg" alt="">
+          </div>
+          <div class="habilidade">
+            <img src="./img/desenvolvendo-habilidade.svg" alt="">
+          </div>
+          <div class="habilidade">
+            <img src="./img/desenvolvendo-habilidade.svg" alt="">
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="contato" class="contato" aria-label="Contato">
+      <h1 class="font-1-xl">Meu Contato</h1>
+      <div class="contato-conteudo">
+        <div class="conteudo-email">
+          <h2 class="font-1-xxxm cor-0">Mande um Email</h2>
+          <p class="font-2-m cor-6">Deseja entrar em contato comigo para trabalhos ou propostas? Me envie um email para conversarmos!</p>
+          <a class="font-1-xm cor-0" href="mailto:vithorrocha066@gmail.com"><img src="./img/enviar-email.svg" alt="">Clique Aqui</a>
+        </div>
+        <div class="contatos">
+          <h2 class="font-1-xxxm cor-0">Outros Meios</h2>
+          <div class="meio-contato">
+            <img src="./img/linkedin-contato-p.svg" alt="">
+            <h3 class="font-1-xxm">LinkedIn</h3>
+            <a class="font-1-xs cor-5" href="https://www.linkedin.com/in/vithorrocha/" target="_blank">linkedin.com/in/vithorrocha/</a>
+          </div>
+          <div class="meio-contato">
+            <img src="./img/whatsapp-contato-p.svg" alt="">
+            <h3 class="font-1-xxm">WhatsApp</h3>
+            <a class="font-1-xs cor-5" href="https://wa.link/ksp8ta" target="_blank">+55 (11) 93242-2360</a>
+          </div>
+          <div class="meio-contato">
+            <img src="./img/github-contato-p.svg" alt="">
+            <h3 class="font-1-xxm">GitHub</h3>
+            <a class="font-1-xs cor-5" href="https://github.com/msumii" target="_blank">github.com/msumii</a>
+          </div>
+          <div class="meio-contato">
+            <img src="./img/instagram-contato-p.svg" alt="">
+            <h3 class="font-1-xxm">Instagram</h3>
+            <a class="font-1-xs cor-5" href=https://www.instagram.com/msumi.v/" target="_blank">instagram.com/msumi.v/</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
+  <footer class="footer-bg">
+    <div class="container footer">
+      <div class="msumi-footer">
+        <a href="./index.html"><img src="img/Msumi.svg" alt="logo"></a>
+        <span class="font-1-xs cor-5">FrontEnd & UI Design</span>
+      </div>
+      <span class="font-1-s cor-6">© 2025 All Rights Reserved</span>
+    </div>
+  </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

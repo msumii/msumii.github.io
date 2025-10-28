@@ -28,6 +28,7 @@
   border-radius: 4px;
   align-items: start;
   position: relative;
+  transition: .3s;
 }
 
 .formacao-conteudo:before {
@@ -38,6 +39,10 @@
   position: absolute;
   top: -4px;
   left: 16px;
+}
+
+.formacao-conteudo:hover {
+  transform: scale(1.08);
 }
 
 .formacao-conteudo h3 {

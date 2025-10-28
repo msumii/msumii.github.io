@@ -1,15 +1,5 @@
 .sobre {
-  padding: 160px 0;
-}
-
-.sobre h1 {
-  text-align: center;
-  margin-bottom: 60px;
-  background: linear-gradient(90deg, #5B23E0 0%, #9560FF 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+  padding-bottom: 160px;
 }
 
 .sobre-informacoes {

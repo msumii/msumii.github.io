@@ -1,6 +1,7 @@
 /* Global */
 @import './global/global.css';
 @import './global/header.css';
+@import './global/footer.css';
 @import './utilidades/tipografia.css';
 @import './utilidades/cores.css';
 
@@ -12,3 +13,5 @@
 @import './portfolio/sobre.css';
 @import './portfolio/formacao.css';
 @import './portfolio/experiencia.css';
+@import './portfolio/portfolio.css';
+@import './portfolio/contato.css';

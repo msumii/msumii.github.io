@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 120px;
   align-items: center;
+  padding-bottom: 160px;
 }
 
 .home-links {
